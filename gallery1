@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PicFlow Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            margin: 0;
+            padding: 0;
+            background: transparent !important;
+        }
+        picflow-gallery {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your PicFlow embed code -->
+    <script>
+        if(!window.picflow){
+            window.picflow=!0;
+            var s=document.createElement("script");
+            s.src="https://picflow.com/embed/main.js";
+            s.type='module';
+            s.defer=true;
+            document.head.appendChild(s);
+        }
+    </script>
+    <picflow-gallery 
+        id="gal_S5w3nqK7IFXnAtSe" 
+        tenant="tnt_D0Uf6qnyAi6bZUDr" 
+        lightbox="#000000E6" 
+        no-padding="true" 
+        no-background="true" 
+        show-cover="true">
+    </picflow-gallery>
+</body>
+</html>
